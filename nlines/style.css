@@ -1,0 +1,88 @@
+:root {
+    --darkest-color: #2e2424;
+    --lightest-color: #fff4e6;
+    --burgandy: #854442;
+    --deep-orange: #e6651a;
+}
+
+body {
+    background: var(--darkest-color);
+    color: var(--lightest-color);
+    font-family: "SF Pro Text", -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+.container {
+	width: 90%;
+	max-width: 1000px;
+	margin: 50px auto;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.circle-shape {
+	width: 140px;
+	height: 140px;
+	position: relative;
+	overflow: hidden;
+	border-radius: 50%;
+	border: 3px solid var(--deep-orange);
+	margin: 0 auto;
+}
+
+.profile-pic {
+	display: inline;
+	margin: 0 auto;
+	height: 100%;
+	width: auto;
+}
+
+a {
+	color: var(--lightest-color);
+	text-decoration: none;
+}
+
+.ig-link {
+	margin: 10px 0;
+	font-weight: bold;
+}
+
+.link-list-item {
+	border: 1px solid var(--lightest-color);
+	box-sizing: border-box;
+	margin: 20px auto;
+	color: var(--lightest-color);
+	padding: 15px;
+	text-align: center;
+	transition: all 0.15s;
+	border-radius: 2px;
+}
+
+.link-list-item:hover,
+a:hover {
+	color: var(--deep-orange);
+	border-color: var(--deep-orange);
+	text-shadow: 0 0 2em var(--deep-orange);
+}
+
+.icon-list-img {
+	height: 50px;
+	width: 50px;
+    margin: 3px;
+}
+
+.git-hub {
+    filter: invert(100%) sepia(79%) saturate(276%) hue-rotate(180deg);
+}
+
+.dark {
+	background: var(--burgandy);
+}
+
+.medium {
+	background: var(--burgandy);
+}
+
+.orange {
+    background: var(--deep-orange);
+}
