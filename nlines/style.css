@@ -1,15 +1,14 @@
-/* color palette from https://www.color-hex.com/color-palettes */
 :root {
-    --darkest-color: #3c2f2f;
+    --darkest-color: #2e2424;
     --lightest-color: #fff4e6;
-    --highlight-color: #be9b7b;
     --burgandy: #854442;
-    --dark-brown: #5e4134;
+    --deep-orange: #e6651a;
 }
 
 body {
     background: var(--darkest-color);
     color: var(--lightest-color);
+    font-family: "SF Pro Text", -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 
 .container {
@@ -27,7 +26,7 @@ body {
 	position: relative;
 	overflow: hidden;
 	border-radius: 50%;
-	border: 3px solid var(--lightest-color);
+	border: 3px solid var(--deep-orange);
 	margin: 0 auto;
 }
 
@@ -52,7 +51,7 @@ a {
 	border: 1px solid var(--lightest-color);
 	box-sizing: border-box;
 	margin: 20px auto;
-	color: var(--darkest-color);
+	color: var(--lightest-color);
 	padding: 15px;
 	text-align: center;
 	transition: all 0.15s;
@@ -61,25 +60,29 @@ a {
 
 .link-list-item:hover,
 a:hover {
-	color: var(--highlight-color);
-	border-color: var(--highlight-color);
-	text-shadow: 0 0 2em var(--highlight-color);
+	color: var(--deep-orange);
+	border-color: var(--deep-orange);
+	text-shadow: 0 0 2em var(--deep-orange);
 }
 
 .icon-list-img {
 	height: 50px;
 	width: 50px;
-	margin: 3px;
+    margin: 3px;
+}
+
+.git-hub {
+    filter: invert(100%) sepia(79%) saturate(276%) hue-rotate(180deg);
 }
 
 .dark {
-	background: var(--bright-color-1);
+	background: var(--burgandy);
 }
 
 .medium {
-	background: var(--bright-color-2);
+	background: var(--burgandy);
 }
 
-.light {
-	background: var(--bright-color-3);
+.orange {
+    background: var(--deep-orange);
 }
